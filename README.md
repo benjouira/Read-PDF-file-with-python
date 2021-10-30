@@ -4,7 +4,7 @@ first you need to install PyPDF2 , open cmd then run:
 
 pip install PyPDF2
 
-copy the code in PDFToText.py
+copy the code in PDFToText.py and change the file name
 
 run your python file
 
