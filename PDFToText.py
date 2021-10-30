@@ -1,9 +1,10 @@
 from PyPDF2 import PdfFileReader,PdfFileWriter
 
+# put here your pdf file name
+pdf = PdfFileReader('yourFile.pdf')
 
-pdf = PdfFileReader('oldmansea.pdf')
-
-with open('oldmanseaLecture.txt','w') as f:
+# chose a name you want for your txt file 
+with open('newFileName.txt','w') as f:
   
   for pageNumber in range (pdf.numPages):
     print('Page: {0}'.format(pageNumber))
@@ -18,3 +19,7 @@ with open('oldmanseaLecture.txt','w') as f:
       f.write(''.center(100,'-'))
       f.write(txt)
   f.close()
+
+
+import pandas as pd
+df=pd.read_csv("newFileName.txt", sep = "\t")
